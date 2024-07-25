@@ -1,0 +1,19 @@
+.input-filter {
+    margin-right: 10px;
+}
+
+.button-filter {
+    margin-top: 30px;
+    height: 40px;
+}
+
+.container-login {
+display:flex
+}
+.img-logo {
+    width: 768px;
+    margin-right: 250px;
+}
+.login-div {
+margin-top: 155px;
+}
