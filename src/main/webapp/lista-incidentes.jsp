@@ -14,10 +14,10 @@
     />
     <link rel="stylesheet" href="css/menu.css" />
   </head>
-<body  class="first"
-            style="
-              background-image: url('assets/img/helpdesk-bg.webp');
-            ">
+<body  class="first" style="background-image: url('assets/img/helpdesk-bg.webp');">
+    <!--Navbar-->
+        <jsp:include page="components/navbar.jsp" />
+        <!--//Navbar-->
   <div style="padding: 10 357;">
 <h1 class="mt-5 text-center">Lista de Incidentes</h1>
         <form class="d-flex mb-20 form-filter" role="search">

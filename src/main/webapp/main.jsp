@@ -61,10 +61,6 @@
                     <a href="historial.jsp" class="btn btn-primary d-block">Historial</a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="assets/img/areas.png" alt="" class="img-fluid">
-                    <a href="areas.jsp" class="btn btn-primary d-block">Areas</a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
                     <img src="assets/img/asignacion-equipos.png" alt="" class="img-fluid">
                     <a href="asignacion-equipos.jsp" class="btn btn-primary d-block">Asignacion de Equipos</a>
                 </div>
