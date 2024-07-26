@@ -9,10 +9,6 @@ public class TrabajadorDTO {
     private String dni;
     private boolean estado;
     private int tipoTrabajadorId;
-    
-    public String nombreCompleto(){
-        return (nombre+" "+apellido).toUpperCase();
-    }
 
     public int getId() {
         return id;

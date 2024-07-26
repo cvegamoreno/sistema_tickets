@@ -4,6 +4,7 @@ D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\E
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\ProveedorDTO.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\SubTipoEquipoDTO.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\dao\LoginDAO.java
+D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\dao\UsuarioDAO.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\DepartamentoEmpresarialDTO.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\UsuarioDTO.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\MotivoEstadoDTO.java
@@ -16,6 +17,7 @@ D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\E
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\TipoTrabajadorDTO.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\config\test.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\ElementoConfiguracionProveedorDTO.java
+D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\control\AuthControl.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\TipoEquipoDTO.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\TrabajadorTicketDTO.java
 D:\Documentos\NetBeansProjects\sistema_tickets\src\main\java\org\example\model\SlaProveedorDTO.java

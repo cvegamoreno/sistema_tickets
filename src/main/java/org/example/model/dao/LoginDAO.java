@@ -1,14 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.example.model.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import org.example.config.Conexion;
-import org.example.model.TrabajadorDTO;
+import org.example.model.TipoUsuarioDTO;
+import org.example.model.UsuarioDTO;
 
 /**
  *
@@ -19,25 +16,31 @@ public class LoginDAO {
     private ResultSet rs = null;
     private PreparedStatement pst = null;
     
-    private final String SQLLOGIN = "SELECT * FROM trabajador WHERE email = ? and contrasenia = ?";
+    private final String SQLLOGIN = "SELECT u.*, tu.nombre AS tipoUsuarioNombre FROM usuario u JOIN tipo_usuario tu ON u.tipo_usuario_id = tu.id WHERE u.usuario = ? and u.contrasenia = ?";
     
-    public TrabajadorDTO Login(String mail, String password){
-        TrabajadorDTO oTrab = null;
+    public UsuarioDTO Login(String usuario, String contrasenia){
+        UsuarioDTO oUser = null;
         try {
             Connection con = Conexion.getConnection();
             pst = con.prepareStatement(SQLLOGIN);
-            pst.setString(1, mail);
-            pst.setString(2, password);
+            pst.setString(1, usuario);
+            pst.setString(2, contrasenia);
             rs = pst.executeQuery();
             
             if (rs.next()) {
-                oTrab = new TrabajadorDTO();
-                oTrab.setId(rs.getInt("UsuarioID"));
-                oTrab.setNombre(rs.getString("Nombre"));
+                oUser = new UsuarioDTO();
+                oUser.setId(rs.getInt("id"));
+                oUser.setUsuario(rs.getString("usuario"));
+                oUser.setTipoUsuarioId(rs.getInt("tipo_usuario_id"));
+                
+                TipoUsuarioDTO tipoUsuario = new TipoUsuarioDTO();
+                tipoUsuario.setId(rs.getInt("tipo_usuario_id"));
+                tipoUsuario.setNombre(rs.getString("tipoUsuarioNombre"));
+                oUser.setTipoUsuario(tipoUsuario);
             }
         } catch (Exception ex) {
             ex.printStackTrace();
-        } finally{
+        } finally {
             try {
                 if (con != null) {
                     con.close();
@@ -49,8 +52,9 @@ public class LoginDAO {
                     rs.close();
                 }
             } catch (Exception ex) {
+                ex.printStackTrace();
             }
         }
-        return oTrab;
+        return oUser;
     }
 }

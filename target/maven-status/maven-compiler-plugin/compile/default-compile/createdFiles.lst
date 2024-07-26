@@ -1,3 +1,4 @@
+org\example\model\dao\UsuarioDAO.class
 org\example\model\DepartamentoEmpresarialDTO.class
 org\example\model\TipoTrabajadorDTO.class
 org\example\model\TipoUsuarioDTO.class
@@ -5,6 +6,7 @@ org\example\model\TrabajadorDTO.class
 org\example\model\CategoriaDTO.class
 org\example\model\SubTipoEquipoDTO.class
 org\example\model\SubcategoriaDTO.class
+org\example\model\TrabajadorCompuestoDTO.class
 org\example\model\dao\LoginDAO.class
 org\example\model\TicketDTO.class
 org\example\model\ElementoConfiguracionDTO.class
@@ -19,8 +21,10 @@ org\example\model\UsuarioDTO.class
 org\example\model\MotivoEstadoDTO.class
 org\example\model\TrabajadorTicketDTO.class
 org\example\model\ProveedorDTO.class
+org\example\model\dao\TrabajadorDAO.class
 LoginServlet.class
 org\example\config\Conexion.class
 org\example\model\EstadoDTO.class
+org\example\control\AuthControl.class
 org\example\model\SedeDTO.class
 org\example\config\test.class

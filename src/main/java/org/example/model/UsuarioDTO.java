@@ -6,7 +6,12 @@ public class UsuarioDTO {
     private String contrasenia;
     private boolean estado;
     private int tipoUsuarioId;
+    private TipoUsuarioDTO tipoUsuario;
 
+    public String nombreMayusc(){
+        return (usuario).toUpperCase();
+    }
+    
     public int getId() {
         return id;
     }
@@ -45,6 +50,22 @@ public class UsuarioDTO {
 
     public void setTipoUsuarioId(int tipoUsuarioId) {
         this.tipoUsuarioId = tipoUsuarioId;
+    }
+    
+    public TipoUsuarioDTO getTipoUsuario() {
+        return tipoUsuario;
+    }
+
+    public void setTipoUsuario(TipoUsuarioDTO tipoUsuario) {
+        this.tipoUsuario = tipoUsuario;
+    }
+    
+    public String getTipoUsuarioNombre() {
+        if (tipoUsuario != null) {
+            return tipoUsuario.getNombre();
+        } else {
+            return "Desconocido";
+        }
     }
 }
 
